@@ -7,7 +7,7 @@ $(document).ready(function() {
 	/* $('#yearly-salary' && '#percent').on('change', function(){
 		let $salary = $('#yearly-salary').val();
 		let $percent = $('#percent').val();
-		let moneyToSpend = $salary * $percent / 100 .toFixed(2);
+		let moneyToSpend = ($salary * $percent / 100).toFixed(2);
 		$('span').text('$' + moneyToSpend);
 	}) */
 
@@ -16,7 +16,7 @@ $(document).ready(function() {
 	$('#yearly-salary' && '#percent').on('keyup', function(){
 		let $salary = $('#yearly-salary').val();
 		let $percent = $('#percent').val();
-		let moneyToSpend = $salary * $percent / 100 .toFixed(2);
+		let moneyToSpend = ($salary * $percent / 100).toFixed(2);
 		$('span').text('$' + moneyToSpend);
 	})
 })
