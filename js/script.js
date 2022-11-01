@@ -1,11 +1,24 @@
 $(document).ready(function(){
-    $(".accordion").on('click', '.accordion-control', function(e){
-        e.preventDefault();
-        $(this)
-            .next('.accordion-panel')
-            .not(':animated')
-            .slideToggle();
+    $(".accordion h1").click(function(){
+        var id = this.id;     /* getting heading id */  
+        $(".accordion-content").each(function(){    /* looping through all elements which have class .accordion-content */
+            if($("#"+id).next()[0].id != this.id){
+                $(this).slideUp();
+            }    
+        });
+        $(this).next().toggle();  /* Selecting div after h1 */
     });
+    $(".accordion2 h1").click(function(){
+        var id = this.id;  
+        $(".accordion-content2").each(function(){
+            if($("#"+id).next()[0].id != this.id){
+                $(this).slideUp();
+            }
+        });
+    
+        $(this).next().toggle();  
+    });
+    
 
     $(".tab-list").each(function() {
         console.log("hello");
