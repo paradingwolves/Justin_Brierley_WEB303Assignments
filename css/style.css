@@ -1,0 +1,121 @@
+/*  Justin Brierley
+    Assignment 6
+    Ricky LaFleur
+*/
+
+/* 1. Header Styles */
+/* 2. Navigation Styles */
+/* 3. Heading Styles */
+/* 4. Body Styles */
+/* 5. Footer Styles */
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+/* 1. Header Styles */
+/* 2. Navigation Styles */
+/* 3. Heading Styles */
+h3{
+    font-size: 2vw;
+}
+/* 4. Body Styles */
+header{
+    text-align: center;
+}
+
+.wrapper {
+    background-color: antiquewhite;
+    width: 75%;
+    margin: 5% auto;
+    box-shadow: black 2px 2px 8px 2px;
+    text-align: center;
+}
+section {
+    border: 2px solid black;
+}
+
+/* Accordion */
+
+article p {
+    text-align: justify;
+    font-size: 1.25vw;
+    line-height: 1.15em;
+    padding: 10px
+}
+
+img {
+    margin: 0 2% 1% 2%;
+    width: 25%;
+    float: left;
+    box-shadow: black 2px 2px 8px 2px;
+}
+#grade10{
+    width: 43.25%
+}
+ul {
+    list-style-type: none;
+}
+li{
+    margin-top: 1%;
+}
+.accordion-panel {
+    display: none;
+    width: 100%;
+    margin: 0 0 0 -1%;
+    overflow: hidden;
+}    
+.tab-panel,td{
+    background-color: white;
+    border: 1px solid black;
+}
+
+button {
+    background-color: white;
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 0 -5%;
+    padding: 5px;
+}
+button:first-of-type{
+    margin-top: 1%;
+}
+button:hover{
+    background-color: grey;
+}
+table {
+    margin: 1% auto;
+    width: 75%;
+}
+
+th{
+    text-align: left;
+}
+
+/* Tab */
+.tab-list {
+    display: block;
+}
+.tab-list li {
+    display: inline-block;
+    background-color: white;
+    padding: 7px;
+    margin-left: 2%;
+}
+.tab-panel {
+    display:none;
+    background-color: white;
+}
+.tab-panel.active {
+    display: block;
+}
+
+/* 5. Footer Styles */
+footer{
+    font-size: 2vw;
+    text-align: center;
+    padding: 20px;
+    background-color: slategray;
+}
