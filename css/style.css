@@ -61,38 +61,65 @@ ul {
 li{
     margin-top: 1%;
 }
-.accordion-panel {
-    display: none;
-    width: 100%;
-    margin: 0 0 0 -1%;
-    overflow: hidden;
-}    
-.tab-panel,td{
-    background-color: white;
-    border: 1px solid black;
-}
-
-button {
-    background-color: white;
-    display: inline-block;
-    width: 100%;
-    margin: 0 0 0 -5%;
-    padding: 5px;
-}
-button:first-of-type{
-    margin-top: 1%;
-}
-button:hover{
-    background-color: grey;
-}
 table {
     margin: 1% auto;
     width: 75%;
 }
-
 th{
     text-align: left;
 }
+td{
+    background-color: white;
+    border: 1px solid black;
+}
+
+
+.friends{
+    width: 35%;
+    margin-left: 5%;
+    float: left
+}
+.noFloat{
+    float: none;
+}
+
+.accordion, .accordion2{
+    width:70%;
+    margin:0 auto;
+    margin-bottom: 2%;
+}
+
+/* accordion heading */
+.accordion h1, .accordion2 h1{
+    font-size:2vw;
+    font-weight: normal;
+    text-align: center;
+    margin-bottom:0px;
+    margin-top:0px;
+    background-color:slategray;
+    padding-top: 7px;
+    padding-bottom: 7px;
+    border:1px solid black;
+    border-radius:3px;
+}
+.accordion h1:hover, .accordion2 h1:hover{
+    cursor:pointer;
+}
+
+/* accordion section content */
+.accordion div, .accordion2 div{
+    display: none;
+    padding: 10px;
+    line-height:20px;
+    background-color: white;
+    border: 1px solid gray;
+    border-radius: 3px;
+}
+.accordion-content article {
+    margin-bottom: 2%;
+}
+
+
 
 /* Tab */
 .tab-list {
@@ -102,7 +129,7 @@ th{
     display: inline-block;
     background-color: white;
     padding: 7px;
-    margin-left: 2%;
+    margin-left: 1.25%;
 }
 .tab-panel {
     display:none;
@@ -111,6 +138,19 @@ th{
 .tab-panel.active {
     display: block;
 }
+
+.tab-panel {
+    margin-top: -1.5%;
+    overflow: hidden;
+}
+dt{
+    font-weight: bold;
+    text-align: left;
+}
+dd {
+    text-align: left;
+}
+
 
 /* 5. Footer Styles */
 footer{
